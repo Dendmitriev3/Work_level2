@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 1300px;
+    background-color: white;
+}
+.header > h1{
+    text-align: center;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+.header > p {
+    text-align: center;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.box_job{
+    width: 65%;
+    height: 400px;
+    background-color: rgb(202, 199, 199);
+    margin: 50px auto;
+    border-radius: 10px;
+}
+.box{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+}
+.box_job  .conteiner_job {
+    width: 250px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.box_job h1{
+    font-size: 25px;
+    margin-left: 10px;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+.box_inner{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid black;
+    margin-top: 20px;
+    align-items: center;
+    padding: 10px;
+}
+h2{
+    font-size: 15px;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.box_inner a{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 2px 9px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+.box_inner p{
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 12px;
+}
+.box_job_group{
+    width: 65%;
+    height: 450px;
+    background-color: rgb(202, 199, 199);
+    margin: 50px auto;
+    border-radius: 10px;
+}
+.box_job_group h1{
+    font-size: 25px;
+    margin-left: 10px;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+.box_job_group  .conteiner_job {
+    width: 250px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.img1{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 350px;
+    height: 450px;
+    display: none;
+}
+input {
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+input::before{
+    content: "";
+    position: fixed;
+    background: url(./img/Ir9.gif) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 10px;
+    left: 80%;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 100;
+    border: 1px solid rgb(255, 255, 255);
+}
+input:checked + .header {
+    /* background-color: black; */
+    color: white;
+    background: url(./img/Ir9.gif);
+}
+input:checked + .header .img1 {
+    display: block;
+}
+input:checked + .header .box_job {
+    background-color: black;
+    border: 2px solid white;
+}
+input:checked + .header .conteiner_job {
+    background-color: black;
+    border: 2px solid white;
+}
+input:checked + .header a {
+    border: 2px solid white;
+}
+input:checked + .header i{
+    color: red;
+}
+input:checked + .header .conteiner_job .box_inner a{
+    color: white;
+}
+input:checked + .header .box_job_group {
+    background-color: black;
+    border: 2px solid white;
+}
